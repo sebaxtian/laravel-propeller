@@ -15,7 +15,17 @@
 				<div class="media-right media-middle"><i class="dic-more-vert dic"></i></div>
 			</a>
 			<ul class="dropdown-menu">
-				<li><a href="login.html">Logout</a></li>
+				<li>
+					<!--<a href="{{ route('login-page') }}">Logout</a>-->
+					<a href="{{ route('logout') }}"
+						onclick="event.preventDefault();
+									document.getElementById('logout-form').submit();">
+						Logout
+					</a>
+					<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+						{{ csrf_field() }}
+					</form>
+				</li>
 			</ul>
 		</li><!-- End user info -->
 		
@@ -50,22 +60,22 @@
 				<div class="media-right media-bottom"><i class="dic-more-vert dic"></i></div>
 			</a> 
 			<ul class="dropdown-menu">
-				<li><a href="typography.html">Typography</a></li>
+				<li><a href="{{ route('typography') }}">Typography</a></li>
 				<li><a href="{{ route('icons') }}">Icons</a></li>
-				<li><a href="shadow.html">Shadow</a></li>
+				<li><a href="{{ route('shadow') }}">Shadow</a></li>
 				<li><a href="{{ route('accordion') }}">Accordion</a></li>
 				<li><a href="{{ route('alert') }}">Alert</a></li>
 				<li><a href="{{ route('badge') }}">Badge</a></li>
 				<li><a href="{{ route('button') }}">Button</a></li>
-				<li><a href="modal.html">Modal</a></li>
+				<li><a href="{{ route('modal') }}">Modal</a></li>
 				<li><a href="{{ route('dropdown') }}">Dropdown</a></li>
 				<li><a href="{{ route('list') }}">List</a></li>
-				<li><a href="navbar.html">Navbar</a></li>
-				<li><a href="popover.html">Popover</a></li>
-				<li><a href="progressbar.html">Progressbar</a></li>
+				<li><a href="{{ route('navbar') }}">Navbar</a></li>
+				<li><a href="{{ route('popover') }}">Popover</a></li>
+				<li><a href="{{ route('progressbar') }}">Progressbar</a></li>
 				<!--<li><a href="sidebar.html">Sidebar</a></li> -->
-				<li><a href="tab.html">Tab</a></li>
-				<li><a href="tooltip.html">Tooltip</a></li>
+				<li><a href="{{ route('tab') }}">Tab</a></li>
+				<li><a href="{{ route('tooltip') }}">Tooltip</a></li>
 				<li><a href="{{ route('card') }}">Card</a></li>
 				<li><a href="{{ route('floating-button') }}">Floating Action Button</a></li>
 			</ul>
@@ -79,8 +89,8 @@
 			<ul class="dropdown-menu">
 				<li><a href="{{ route('custom-scrollbar') }}">Custom Scrollbar</a></li>
 				<li><a href="{{ route('datetimepicker') }}">Datetimepicker</a></li>
-				<li><a href="range-slider.html">Range Slider</a></li>
-				<li><a href="select2.html">Select2</a></li>
+				<li><a href="{{ route('range-slider') }}">Range Slider</a></li>
+				<li><a href="{{ route('select2') }}">Select2</a></li>
 			</ul>
 		</li>
 		
@@ -110,9 +120,9 @@
 				<div class="media-right media-bottom"><i class="dic-more-vert dic"></i></div>
 			</a> 
 			<ul class="dropdown-menu">
-				<li><a href="table.html">Normal Table</a></li>
+				<li><a href="{{ route('table') }}">Normal Table</a></li>
 				<li><a href="{{ route('data-table') }}">Data Table</a></li>
-				<li><a href="table-with-expand-collapse.html">Table with Expand/Collapse</a></li>
+				<li><a href="{{ route('table-with-expand-collapse') }}">Table with Expand/Collapse</a></li>
 			</ul>
 		</li>
 
@@ -140,7 +150,7 @@
 				<li><a href="{{ route('contact') }}">Contact</a></li>
 				<li><a href="{{ route('404') }}">404</a></li>
 				<li><a href="{{ route('blank') }}">Blank</a></li>
-				<li><a href="profile.html">Profile</a></li>
+				<li><a href="{{ route('profile') }}">Profile</a></li>
 			</ul>
 		</li>
 		<li> 
@@ -167,7 +177,7 @@
 			</a> 
 		</li>
 		<li> 
-			<a class="pmd-ripple-effect" href="notifications.html">	
+			<a class="pmd-ripple-effect" href="{{ route('notifications') }}">	
 				<i class="media-left media-middle">
 				<svg version="1.1" id="Layer_1" x="0px" y="0px" width="15.3px" height="18px" viewBox="289.99 337.535 15.3 18" enable-background="new 289.99 337.535 15.3 18" xml:space="preserve">
 					<g>

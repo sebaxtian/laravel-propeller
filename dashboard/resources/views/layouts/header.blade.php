@@ -17,7 +17,7 @@
 					<!-- Card header -->
 					<div class="pmd-card-title">
 						<div class="media-body media-middle">
-							<a href="notifications.html" class="pull-right">3 new notifications</a>
+							<a href="{{ route('notifications') }}" class="pull-right">3 new notifications</a>
 							<h3 class="pmd-card-title-text">Notifications</h3>
 						</div>
 					</div>
@@ -93,7 +93,7 @@
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
 			<a href="javascript:void(0);" class="btn btn-sm pmd-btn-fab pmd-btn-flat pmd-ripple-effect pull-left margin-r8 pmd-sidebar-toggle"><i class="material-icons">menu</i></a>	
-		  <a href="index.html" class="navbar-brand">
+		  <a href="{{ route('home') }}" class="navbar-brand">
 		  	<svg version="1.1" x="0px" y="0px"
 	 width="174.16px" height="48px" viewBox="0 0 174.16 48" enable-background="new 0 0 174.16 48" xml:space="preserve">
 <g>

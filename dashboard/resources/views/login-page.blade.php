@@ -45,7 +45,7 @@
 							<a href="javascript:void(0);">Forgot password?</a>
 						</span>
 					</div>
-					<a href="index.html" type="button" class="btn pmd-ripple-effect btn-primary btn-block">Login</a>
+					<a href="{{ route('home') }}" type="button" class="btn pmd-ripple-effect btn-primary btn-block">Login</a>
                     
 					<p class="redirection-link">Don't have an account? <a href="javascript:void(0);" class="login-register">Sign Up</a>. </p>
                     
@@ -90,7 +90,7 @@
               </div>
 			  
 			  <div class="pmd-card-footer card-footer-no-border card-footer-p16 text-center">
-				<a href="index.html" type="button" class="btn pmd-ripple-effect btn-primary btn-block">Sign Up</a>
+				<a href="{{ route('home') }}" type="button" class="btn pmd-ripple-effect btn-primary btn-block">Sign Up</a>
 			  	<p class="redirection-link">Already have an account? <a href="javascript:void(0);" class="register-login">Sign In</a>. </p>
 			  </div>
 			</form>
@@ -114,7 +114,7 @@
                     </div>
 				</div>
 			  <div class="pmd-card-footer card-footer-no-border card-footer-p16 text-center">
-			  	<a href="index.html" type="button" class="btn pmd-ripple-effect btn-primary btn-block">Submit</a>
+			  	<a href="{{ route('home') }}" type="button" class="btn pmd-ripple-effect btn-primary btn-block">Submit</a>
 			  	<p class="redirection-link">Already registered? <a href="javascript:void(0);" class="register-login">Sign In</a></p>
 			  </div>
 			</form>

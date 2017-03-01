@@ -58,3 +58,31 @@ Route::get('/inbox', 'InboxController@index')->name('inbox');
 Route::get('/list', 'ListController@index')->name('list');
 
 Route::get('/login-page', 'LoginPageController@index')->name('login-page');
+
+Route::get('/modal', 'ModalController@index')->name('modal');
+
+Route::get('/navbar', 'NavbarController@index')->name('navbar');
+
+Route::get('/notifications', 'NotificationsController@index')->name('notifications');
+
+Route::get('/popover', 'PopoverController@index')->name('popover');
+
+Route::get('/profile', 'ProfileController@index')->name('profile');
+
+Route::get('/progressbar', 'ProgressbarController@index')->name('progressbar');
+
+Route::get('/range-slider', 'RangeSliderController@index')->name('range-slider');
+
+Route::get('/select2', 'Select2Controller@index')->name('select2');
+
+Route::get('/shadow', 'ShadowController@index')->name('shadow');
+
+Route::get('/tab', 'TabController@index')->name('tab');
+
+Route::get('/table-with-expand-collapse', 'TableExpandCollapseController@index')->name('table-with-expand-collapse');
+
+Route::get('/table', 'TableController@index')->name('table');
+
+Route::get('/tooltip', 'TooltipController@index')->name('tooltip');
+
+Route::get('/typography', 'TypographyController@index')->name('typography');
